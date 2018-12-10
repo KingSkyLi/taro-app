@@ -1,0 +1,8 @@
+<block>
+    <view class="index">
+        <text>{{pageName}}</text>
+        <text>{{num}}</text>
+        <button bindtap="add">ADD</button>
+        <button bindtap="toTest">toTest</button>
+    </view>
+</block>
