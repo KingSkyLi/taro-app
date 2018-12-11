@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Button } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 import './test.less'
 
@@ -21,7 +21,7 @@ export default class Test extends Component {
 
   componentDidHide () { }
 
-  add() {
+  add = () => {
     this.props.stores.testStore.add();
   }
 

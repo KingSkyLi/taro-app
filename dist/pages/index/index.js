@@ -40,6 +40,13 @@ var Index = (_dec = (0, _index3.inject)('stores'), _dec(_class = (0, _index3.obs
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["pageName", "num", "stores"], _this.config = {
       navigationBarTitleText: '首页'
+
+      // constructor(props){
+      //   super(props)
+      // }
+
+    }, _this.add = function () {
+      _this.props.stores.indexStore.add();
     }, _this.$$refs = [], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
@@ -63,11 +70,6 @@ var Index = (_dec = (0, _index3.inject)('stores'), _dec(_class = (0, _index3.obs
   }, {
     key: "componentDidHide",
     value: function componentDidHide() {}
-  }, {
-    key: "add",
-    value: function add() {
-      this.props.stores.indexStore.add();
-    }
   }, {
     key: "toTest",
     value: function toTest() {
